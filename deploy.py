@@ -68,6 +68,7 @@ def deploy():
 
     print(banner.success('Deployment is done!'))
     print('Please check execution traces as installation scripts errors are ignored.')
+    print('You may also need to pop stashed changes in repositories.')
 
 
 if __name__ == '__main__':
