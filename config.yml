@@ -1,0 +1,17 @@
+parameters:
+  projects_dir: ./projects
+
+projects:
+  p-api:
+    name: P-API
+    description: The P-Platform monolithic API
+    repository:
+      https: https://github.com/p-project/p-api.git
+      ssh: git@github.com:p-project/p-api.git
+
+  p-seeder-engine:
+    name: P-Seeder engine
+    description: Bittorrent daemon controlled by HTTP requests
+    repository:
+      https: https://github.com/p-project/p-seeder-engine.git
+      ssh: git@github.com:p-project/p-seeder-engine.git
