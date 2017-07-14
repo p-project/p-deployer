@@ -7,7 +7,7 @@ from subprocess import Popen
 from time import sleep
 from utils import banner
 
-conf = yaml.load(open("./config.yml", 'r'))
+conf = yaml.load(open('./config.yml', 'r'))
 
 
 def start_all():

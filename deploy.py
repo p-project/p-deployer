@@ -7,7 +7,7 @@ from subprocess import call
 from utils import banner
 from check import check_requirements
 
-conf = yaml.load(open("./config.yml", 'r'))
+conf = yaml.load(open('./config.yml', 'r'))
 
 cloning_method = 'ssh'
 if len(sys.argv) > 1 and sys.argv[1] == 'https':
@@ -41,8 +41,9 @@ def update(name, path):
     call(['git', 'pull'], cwd=path)
 
 
-def install(name, url, path):
+def install(name, description, url, path):
     print(banner.info('Now installing ' + name))
+    print(description)
 
     print(banner.info('Using ' + cloning_method + ' cloning method'))
     print('You may change the cloning method by passing https or ssh as an argument.')
@@ -58,7 +59,7 @@ def deploy():
         if os.path.exists(path):
             update(project['name'], path)
         else:
-            install(project['name'], project['repository'][cloning_method], path)
+            install(project['name'], project['description'], project['repository'][cloning_method], path)
 
         check_requirements(project_id)
 
