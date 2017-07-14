@@ -4,14 +4,28 @@ parameters:
 projects:
   p-api:
     name: P-API
-    description: The P-Platform monolithic API
+    description: The P-Platform monolithic API.
     repository:
       https: https://github.com/p-project/p-api.git
       ssh: git@github.com:p-project/p-api.git
 
   p-seeder-engine:
     name: P-Seeder engine
-    description: Bittorrent daemon controlled by HTTP requests
+    description: Bittorrent daemon controlled by HTTP requests.
     repository:
       https: https://github.com/p-project/p-seeder-engine.git
       ssh: git@github.com:p-project/p-seeder-engine.git
+
+  p-seeder-cli:
+    name: P-Seeder CLI
+    description: A command line interface to P-seeder engine.
+    repository:
+      https: https://github.com/p-project/p-seeder-cli.git
+      ssh: git@github.com:p-project/p-seeder-cli.git
+
+  p-monitor:
+    name: P-Monitor
+    description: P-Project JavaScript official trackers monitor.
+    repository:
+      https: https://github.com/p-project/p-monitor.git
+      ssh: git@github.com:p-project/p-monitor.git
