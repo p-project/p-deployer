@@ -13,7 +13,7 @@ This command allows you to install or update the project in one command:
 ./deploy.py
 ```
 
-You may pass an optional argument to clone using https method instead of ssh:
+You may pass an optional argument to clone using `https` method instead of `ssh`:
 
 ```sh
 ./deploy.py https
