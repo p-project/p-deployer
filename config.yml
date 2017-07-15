@@ -2,6 +2,13 @@ parameters:
   projects_dir: ./projects
 
 projects:
+  p-platform:
+    name: P-Platform
+    description: The P-Platform website on which you can browse, watch and share videos on the WebTorrent network.
+    repository:
+      https: https://github.com/p-project/p-platform.git
+      ssh: git@github.com:p-project/p-platform.git
+
   p-api:
     name: P-API
     description: The P-Platform monolithic API.
