@@ -59,3 +59,5 @@ run:
 The `bin` and `script` section are checks that are run during install (checking if binaries are present on system and
 scripts return a 0 exit code). The `install` section contains commands that will be run if dependencies are met. The `run`
 section contains scripts that will be used to run the application.
+
+- add your project to the `config.yml` [file at P-Deployer root](https://github.com/p-project/p-deployer/blob/master/config.yml).
