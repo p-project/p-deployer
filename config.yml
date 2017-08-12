@@ -30,6 +30,13 @@ projects:
       https: https://github.com/p-project/p-seeder-cli.git
       ssh: git@github.com:p-project/p-seeder-cli.git
 
+  p-seeder-app:
+    name: P-Seeder Application
+    description: The P-Platform electron application to seed contents.
+    repository:
+      https: https://github.com/p-project/p-seeder-app.git
+      ssh: git@github.com:p-project/p-seeder-app.git
+
   p-monitor:
     name: P-Monitor
     description: P-Project JavaScript official trackers monitor.
